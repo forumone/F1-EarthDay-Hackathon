@@ -11,12 +11,10 @@
 <div layout="column" layout-align="center" layout-margin class="info-container">
     <div flex class="strip"><h2 class="md-display-1">Explore the Data</h2></div>
 
-    <address-search></address-search>
-    
-    <div flex>
-    	Map here...
-    </div>
+    <address-search submit="addMarker"></address-search>
 </div>
+
+<mapbox-map id="homeMap" style="height: 600px; width: 900px;"></mapbox-map>
 
 <hr>
 

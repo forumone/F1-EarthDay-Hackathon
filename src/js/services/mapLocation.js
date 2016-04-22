@@ -55,6 +55,10 @@ angular.module('wildfireHazards').service('mapLocation', function() {
   return {
     setLocation : setLocation,
     getLocation : getLocation,
-    getData : getData
+    getData : getData,
+    setLat : setLat,
+    setLng : setLng,
+    getLat : getLat,
+    getLng : getLng
   }
 });
