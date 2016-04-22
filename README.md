@@ -7,7 +7,7 @@
  
 ## Technologies used
 - Angular JS
--- Angular Material (For responsive elements and predefined classes)
+- Angular Material (For responsive elements and predefined classes)
 - Mapbox
 - Google Map API (For geo-locating locations)
 - Grunt (http://gruntjs.com)
