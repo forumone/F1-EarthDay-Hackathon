@@ -11,13 +11,8 @@
 <div layout="column" layout-align="center" layout-margin class="info-container">
     <div flex class="strip"><h2 class="md-display-1">Explore the Data</h2></div>
 
-    <div flex>
-      <div class="form-item form-item--textfield">
-          <label for="address" class="element-invisible">Enter a Specific Address</label>
-          <input geocode="place = $place" type="text" name="textfield" id="address" placeholder="Search" autocorrect="off" size="28" maxlength="128" class="form-text">
-      </div>
-      <md-button ng-disabled="!(place && filter)" ng-click="submit($event)" class="button button--search">Search</md-button>
-    </div>
+    <address-search></address-search>
+    
     <div flex>
     	Map here...
     </div>

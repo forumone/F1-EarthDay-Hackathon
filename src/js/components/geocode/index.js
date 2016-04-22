@@ -1,4 +1,4 @@
-app.directive('geocode', function () {
+angular.module('wildfireHazards').directive('geocode', function () {
     function validPlace(place) {
         for (var k in place) {
             if (Object.prototype.hasOwnProperty.call(place, k) && k !== 'name') {
