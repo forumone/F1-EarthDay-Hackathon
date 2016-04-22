@@ -13,10 +13,13 @@
 
     <div flex>
       <div class="form-item form-item--textfield">
-          <label for="address" class="element-invisible">Address</label>
-          <input geocode="place = $place" type="text" name="textfield" id="address" placeholder="Enter an Address..." autocorrect="off" size="28" maxlength="128" class="form-text">
+          <label for="address" class="element-invisible">Enter a Specific Address</label>
+          <input geocode="place = $place" type="text" name="textfield" id="address" placeholder="Search" autocorrect="off" size="28" maxlength="128" class="form-text">
       </div>
       <md-button ng-disabled="!(place && filter)" ng-click="submit($event)" class="button button--search">Search</md-button>
+    </div>
+    <div flex>
+    	Map here...
     </div>
 </div>
 
@@ -39,9 +42,9 @@
 
     <div flex>
       <md-grid-list
-        md-cols="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="6"
-        md-row-height-gt-md="1:1" md-row-height="4:3"
-        md-gutter="8px" md-gutter-gt-sm="4px" >
+        md-cols="2" md-cols-sm="2"
+        md-row-height="4:3"
+        md-gutter="8px" >
 		    <md-grid-tile>
 		      <ng-md-icon icon="cloud" style="fill: #000" size="64"></ng-md-icon>
 		      <md-grid-tile-footer><h3>Some title here</h3></md-grid-tile-footer>
