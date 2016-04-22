@@ -1,0 +1,187 @@
+.header {
+  @extend %clearfix;
+  @include add-grid(12 at $mobile-menu-bp);
+  @include add-gutter(1);
+  background-color: $gray--light;
+  display: none;
+  margin: 0 0 2em;
+  padding: 1em 0 0;
+
+  @include breakpoint($mobile-menu-bp, $no-query: true) {
+    display: block;
+  }
+}
+
+.header__logo {
+  @include breakpoint($mobile-menu-bp, $no-query: true) {
+    @include grid-span(5,1);
+  }
+
+  a {
+    @include image-replace(299px, 73px);
+    background-image: url(../images/logo-tag.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+
+.header__nav {
+  @extend %clearfix;
+  background-color: $blue;
+  background-image: linear-gradient(180deg, #336483 0%, $blue 100%);
+  clear: both;
+  margin: 1em 0 0;
+
+  ul {
+    @extend %nav--inline;
+    margin-bottom: 0;
+    padding: 0;
+
+    @include breakpoint($mobile-menu-bp, $no-query: true) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+
+  li.nav__item {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    flex-grow: 1;
+    padding: 14px;
+    text-align: center;
+
+    &:nth-child(1) {
+      border-left: none;
+    }
+
+    .nav__link {
+      // Add transparent border to avoid height jumpiness on hover.
+      border: 1px solid transparent;
+      color: #fff;
+      display: inline-block;
+      font-weight: 700;
+      line-height: 1.75;
+      padding: .5em 1em;
+      text-decoration: none;
+      text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+      &:hover, &:focus {
+        background-color: #25475c;
+        border: 1px solid #618ca6;
+        transition-duration: 0s;
+      }
+
+      .active & {
+        background-color: #25475c;
+        border: 1px solid #618ca6;
+      }
+    }
+
+    &.my-favorites {
+      @extend %button--my-favorites;
+      background-color: $green--links;
+      background-image: linear-gradient(180deg, $green 0%, $green--links 100%);
+      // Add transparent border to avoid height jumpiness on hover.
+      border: 1px solid transparent;
+      margin: 0;
+      padding: 14px;
+      text-align: left;
+    }
+  }
+}
+
+.header__nav--secondary {
+  @extend %nav--inline;
+  @extend %print-hide;
+  clear: both;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(850px, $no-query: true) {
+    @include grid-span(8,5);
+    clear: none;
+    margin: 1em 0 0;
+    text-align: right;
+  }
+
+  .nav__item {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0.5em 0;
+    @include breakpoint(550px, $no-query: true) {
+      padding: 0 1em 0;
+    }
+
+    &:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    &.button--login {
+      @extend %button--login;
+      margin: 0;
+      text-align: left;
+      width: 100%;
+
+      @include breakpoint(550px, $no-query: true) {
+        margin-left: 2em;
+        text-align: center;
+        width: auto;
+      }
+
+      @include breakpoint(850px, $no-query: true) {
+        margin: 1em 0 0;
+      }
+
+      .nav__link {
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav__link {
+      color: $purple--dark;
+      font-size: 13px;
+      text-align: right;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// No flexbox fallback.
+.no-flexbox .header__nav {
+  .nav__item {
+    border-left: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50%;
+
+    @include breakpoint(850px, $no-query: true) {
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-right: none;
+      width: auto;
+    }
+
+    // Third menu item.
+    &:nth-child(3) {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      @include breakpoint(850px, $no-query: true) {
+        border-top: none;
+      }
+    }
+
+    // Fourth menu item.
+    &:nth-child(4) {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      @include breakpoint(850px, $no-query: true) {
+        border-top: none;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "wildfire_hazards",
+  "description": "",
+  "main": "",
+  "authors": [
+    "William Hurley <whurley@forumone.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/forumone/F1-EarthDay-Hackathon",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.18",
+    "lodash": "~4.8.1",
+    "angular-route": "~1.5.0",
+    "angular-aria": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-resource": "~1.5.0",
+    "singularity": "~1.6.2",
+    "jquery": "^2.2.3"
+  },
+  "exportsOverride": {
+    "lodash": {
+      "js": "dist/lodash.js"
+    }
+  }
+}

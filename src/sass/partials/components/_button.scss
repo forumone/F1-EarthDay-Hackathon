@@ -1,0 +1,34 @@
+// @file
+// Styles for buttons.
+
+.button {
+  @extend %button;
+}
+
+.button--large {
+  @extend %button--large;
+}
+
+.button--secondary {
+  @extend %button--secondary;
+}
+
+.button--login {
+  @extend %button--login;
+}
+
+.button--purchase {
+  @extend %button--purchase;
+}
+
+.button--read-now {
+  @extend %button--read-now;
+}
+
+.button--reset {
+  @extend %button--reset;
+}
+
+.button--submit {
+  @extend %button--submit;
+}

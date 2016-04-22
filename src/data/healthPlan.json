@@ -1,0 +1,59 @@
+{
+  "id": 1, 
+  "name" : "Aetna Health Inc. (Pennsylvania)", 
+  "website" : "https://www.aetna.com/", 
+  "rating" :3, 
+  "isAccr":true, 
+  "states" : ["Alabama","Alaska", "Arizona", "Arkansas"], 
+  "members" : "250,000 - 275,000 Members Enrolled as of 1/1/15", 
+  "otherNames" : ["Aetna Choice POS","Aetna HMO", "Aetna Health Network Only", "Aetna Open Access HMO"], 
+  "ratings" : [{
+    "condition":"Asthma Treatment", 
+    "rating" : "4.0",
+    "sub" : [
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"}
+    ]
+  },{
+    "condition":"Cancer Screening", 
+    "rating" : "4.0",
+    "sub" : [
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"}
+    ]
+  },{
+    "condition":"Cancer Screening", 
+    "rating" : "4.0",
+    "sub" : [
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"}
+    ]
+  },{
+    "condition":"Cancer Screening",
+    "rating" : "4.0",
+    "sub" : [
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"},
+       {"title" : "Subsection Title", "descr" : "Description of this will appear here. Description of this will appear here. Description of this will appear here. ", "rating" : "3.0"}
+    ]
+  },{
+    "condition":"Cancer Screening", 
+    "rating" : "4.0"
+  },{
+    "condition":"Diabetes", 
+    "rating" : "4.0"
+  }], 
+  "insuranceType" : "Commercial", 
+  "productTypes" : null
+}

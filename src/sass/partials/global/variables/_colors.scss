@@ -1,0 +1,77 @@
+// @file
+// Color variables
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_
+
+// NCQA Primary Colors
+$blue: #3b6e8f;
+$red: #e31836;
+$green: #008775;
+
+// NCQA Secondary Colors
+$blue--dark: #3b6e8e;
+$blue--light: #57849f;
+$purple: #b1b0cc;
+$purple--dark: #626199;
+
+$green--light: #8bc55a;
+$green--dark: #71b241;
+$green--links: #00937f;
+$green-teal: #5da39a;
+$green-forest: #085c52;
+
+$red--light: #eb4a4a;
+$yellow: #edc023;
+$gray: #dcd5ca;
+$gray--medium: #d7dede;
+$gray--light: #f2f6f8;
+
+$offwhite: #f7f6f3;
+$white: #fff;
+
+$primary-text-color: #2e3a42;
+$secondary-text-color: #555;
+$heading-text-color: #333;
+
+$body-color: #fff;
+$link-color: $green--links;
+$link-hover-color: $blue;
+$selection-background: $blue;
+$selection-foreground: #fff;
+$status-color: $green;
+$warning-color: $yellow;
+$error-color: $red;
+$border-color: #e5e5e5;
+
+$gradient-light: rgba(255, 255, 255, 0.2);
+$gradient-dark: rgba(0, 0, 0, 0.2);
+
+// Buttons
+$button-bg-color: #fff;
+$button-bg-hover-color: rgba(6, 150, 129, 0.1);
+
+
+$button-text-color: #079683;
+
+$button-divider-line--green: rgba(6, 150, 129, 0.1);
+$button-divider-line--purple: rgba(99, 97, 154, 0.5);
+
+// Forms
+$form-bg-color: #eee; // Used for fieldsets and vertical-tabs.
+$form-border-color: #e5e5e5;
+
+// Mobile Menu
+$mobile-menu-fallback-bg-color: $white;
+$mobile-menu-bg-color: $white;
+$mobile-menu-border-color: $blue--light;
+$mobile-menu-text-color: $white;
+$mobile-menu-hover-color: $gray--medium;
+
+$mobile-submenu-fallback-bg-color: $offwhite;
+$mobile-submenu-bg-color: $offwhite;
+$mobile-submenu-text-color: $blue;
+$mobile-submenu-hover-color: $blue--dark;
+
+// Nav
+$pillbox-bg-color: #f9f9f9;
+$pillbox-text-color: #333;
+$pipeline-border-color: #ccc;

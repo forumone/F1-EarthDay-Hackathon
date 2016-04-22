@@ -1,0 +1,7 @@
+---
+forumone::ports:
+  - 9001
+  
+forumone::nodejs::modules:
+  - grunt-cli
+  - bower

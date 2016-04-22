@@ -1,0 +1,44 @@
+{
+  "name": "wildfire_hazards",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:forumone/F1-EarthDay-Hackathon.git"
+  },
+  "themePath": "src",
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "connect-livereload": "^0.5.4",
+    "grunt": "^0.4.5",
+    "grunt-angular-templates": "^1.0.3",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.14",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html-build": "^0.5.2",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-newer": "^1.1.2",
+    "grunt-ng-annotate": "^1.0.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-sass-globbing": "^1.4.0",
+    "grunt-shell": "^1.2.1",
+    "grunt-simple-watch": "^0.1.2",
+    "grunt-svg2png": "^0.2.7",
+    "grunt-svgmin": "^3.1.2",
+    "grunt-sync": "~0.5.2",
+    "include-all": "^0.1.6",
+    "load-grunt-tasks": "^3.2.0",
+    "postcss-assets": "^4.0.1",
+    "time-grunt": "^1.3.0"
+  },
+  "dependencies": {
+    "grunt-ng-constant": "^2.0.1"
+  }
+}
