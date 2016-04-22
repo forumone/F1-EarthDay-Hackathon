@@ -17,3 +17,39 @@ h1 {
 		margin: 0;
 	}
 }
+
+.header {
+	background-color: #3F51B5 !important;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+ -moz-box-shadow: 0 8px 6px -6px black;
+      box-shadow: 0 8px 6px -6px black;
+}
+
+
+	.md-menu-toolbar {
+		background-color: #3F51B5 !important;
+			button {
+				color: #FFF;
+			}
+	}
+
+	.logo {
+		background-image: url("/images/logo.png");
+		background-size: 200px 60px;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 200px;
+    float: left;
+	}
+
+	.main-menu {
+		float: right;
+		padding-top: 10px;
+
+		a {
+			text-decoration: none;
+    	color: #fff;
+    	padding-right: 24px;
+		}
+	}
+}
