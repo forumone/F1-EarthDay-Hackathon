@@ -7,5 +7,9 @@
  
 ## Technologies used
 - Angular JS
+-- Angular Material (For responsive elements and predefined classes)
 - Mapbox
-
+- Google Map API (For geo-locating locations)
+- Grunt (http://gruntjs.com)
+- Node.js (https://nodejs.org)
+- Bower (http://bower.io)
