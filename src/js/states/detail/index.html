@@ -4,9 +4,11 @@
   	{{location}}
   </div>
   <div flex="66">
-  
+  	<mapbox-map id="detailMap"></mapbox-map>
   </div>
 </div>
+
+<div style="clear: both;"></div>
 <md-grid-list md-cols="3" md-gutter="1em" md-row-height="2:1">
   <md-grid-tile ng-repeat="(key, category) in wuiCategories" ng-if="null != getData(key)">
   	<h2>{{getData(key)}} {{category.unit}}</h2>
