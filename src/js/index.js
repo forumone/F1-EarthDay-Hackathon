@@ -11,4 +11,9 @@ app.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
     templateUrl : 'states/home/index.html',
     controller : 'HomeController',
   })
+  .state('detail', {
+	  url : '/detail',
+	  templateUrl : 'states/detail/index.html',
+	  controller : 'DetailController'
+  });
 });
