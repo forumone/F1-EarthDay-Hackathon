@@ -15,6 +15,11 @@ app.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
 	  url : '/detail',
 	  templateUrl : 'states/detail/index.html',
 	  controller : 'DetailController'
+  })
+  .state('about', {
+    url : '/about',
+    templateUrl : 'states/about/index.html',
+    controller : 'AboutController'
   });
 })
 .constant('wuiCategories', {
