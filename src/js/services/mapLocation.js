@@ -1,5 +1,7 @@
 angular.module('wildfireHazards').service('mapLocation', function() {
   var location = null;
+  var lat = null;
+  var lng = null;
   
   var dummyData = {
     housingDensity : 200,
@@ -7,11 +9,11 @@ angular.module('wildfireHazards').service('mapLocation', function() {
     householdDensity : 200,
     populationDensity : 200,
     area : 1000,
-    publicProtected : true,
+    publicProtected : 'No housing',
     amountWildlandVegetation : 1000,
     amountNonWildlandVegetation : 1000,
-    percentWildlandVegetation : .5,
-    wui : 'Inerface',
+    percentWildlandVegetation : '50%',
+    wui : 'Interface',
     interfaceDensity : 'High density',
     intermixDensity : null,
     vegetationDensity : null,
@@ -32,6 +34,22 @@ angular.module('wildfireHazards').service('mapLocation', function() {
   
   function getData(name) {
     return dummyData[name];
+  }
+  
+  function getLat() {
+    return lat;
+  }
+  
+  function setLat(l) {
+    lat = l;
+  }
+  
+  function getLng() {
+    return lng;
+  }
+  
+  function setLng(l) {
+    lng = l;
   }
   
   return {

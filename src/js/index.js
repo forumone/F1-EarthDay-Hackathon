@@ -36,4 +36,7 @@ app.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
   seasonalHousingUnits : { title : 'Seasonal Housing Units', unit : '' },
   households : { title : 'Households', unit : '' },
   people : { title : 'People', unit : '' }
+})
+.run(function() {
+  L.mapbox.accessToken = 'pk.eyJ1Ijoid2h1cmxleWYxIiwiYSI6ImNpbjdyNjQ4cDBnN2t1dWx6dDVvdXI0cGoifQ.v2Hs39N01bCFlQx5PpodUw';
 });
