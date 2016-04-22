@@ -1,5 +1,7 @@
-var app = angular.module('wildfireHazards', [ 'ngRoute', 'ui.router' ]);
-app.config(function($urlRouterProvider, $stateProvider) {
+var app = angular.module('wildfireHazards', [ 'ngRoute', 'ui.router', 'ngMaterial' ]);
+app.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+  $mdThemingProvider.theme('default').primaryPalette('indigo').accentPalette('deep-orange');
+	
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
